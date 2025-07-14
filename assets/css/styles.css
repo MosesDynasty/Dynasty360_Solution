@@ -1,0 +1,29 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #0B1F3A, #007BFF);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+footer {
+  background-color: #0B1F3A;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

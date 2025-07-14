@@ -1,0 +1,66 @@
+<!-- career.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Acceleration | Dynasty360</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Career Acceleration</h1>
+    <p>Helping you succeed faster and smarter</p>
+  </header>
+
+  <section class="section container">
+    <h3 class="text-primary">Our Services</h3>
+    <ul>
+      <li>CV/Resume Writing and Optimization</li>
+      <li>LinkedIn Profile Setup</li>
+      <li>Career Mapping & Coaching</li>
+      <li>Job Search Support</li>
+    </ul>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <h4>Book a Career Session</h4>
+      <form>
+        <div class="mb-3">
+          <label for="nameCareer" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="nameCareer">
+        </div>
+        <div class="mb-3">
+          <label for="emailCareer" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailCareer">
+        </div>
+        <div class="mb-3">
+          <label for="goalCareer" class="form-label">Tell us your current career status</label>
+          <textarea class="form-control" id="goalCareer" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Load nav and footer dynamically
+    fetch("components/nav.html")
+      .then(res => res.text())
+      .then(html => document.getElementById("nav-placeholder").innerHTML = html);
+
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(html => document.getElementById("footer-placeholder").innerHTML = html);
+  </script>
+</body>
+</html>
