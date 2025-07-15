@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,38 +11,108 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .hero {
+      background: url('assets/images/top-view-world-tourism-day-concept-with-copy-space.jpg') no-repeat center center/cover;
+      padding: 120px 0;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease;
+    }
+  </style>
 </head>
 <body>
-  <!-- Include navigation -->
+
+  <!-- Navigation -->
   <div id="nav-placeholder"></div>
 
-  <!-- Landing Section -->
-  <header class="animate__animated animate__fadeInDown">
-    <h1>Dynasty360 Solutions</h1>
-    <p class="lead">Solutions that move you forward, Effortlessly.</p>
+  <!-- Hero Section -->
+  <header class="hero animate__animated animate__fadeIn">
+    <div class="container">
+      <h1>Welcome to Dynasty360 Solutions</h1>
+      <p class="lead">Solutions that move you forward, Effortlessly.</p>
+      <a href="#services" class="btn btn-light btn-lg mt-4">Explore Our Services</a>
+    </div>
   </header>
 
-  <section class="section text-center bg-light animate__animated animate__fadeIn">
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light animate__animated animate__fadeInUp">
     <div class="container">
-      <h2>Welcome to Dynasty360 Solutions</h2>
-      <p>We provide complete support in your journey — from career to relocation, business registration to mobility solutions.</p>
+      <h2 class="text-center mb-5">What We Do</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <div class="card service-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🌍 Travel & Relocation</h5>
+              <p class="card-text">Visa help, flight booking, relocation guidance — we make it seamless.</p>
+              <a href="travel.html" class="btn btn-outline-primary btn-sm mt-2">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card service-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">💼 Career & Jobs</h5>
+              <p class="card-text">Resume help, job planning, interviews prep — we accelerate your growth.</p>
+              <a href="career.html" class="btn btn-outline-primary btn-sm mt-2">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card service-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🚗 Car Sourcing</h5>
+              <p class="card-text">Reliable car imports & dropshipping. Verified & smooth process.</p>
+              <a href="cars.html" class="btn btn-outline-primary btn-sm mt-2">Request a Car</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card service-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">📑 Digital Documents</h5>
+              <p class="card-text">CAC registration, TIN, international IDs — done quickly and right.</p>
+              <a href="documents.html" class="btn btn-outline-primary btn-sm mt-2">Start Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Include footer -->
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/2349160433557" class="btn btn-success rounded-circle shadow" 
+     style="position: fixed; bottom: 20px; right: 20px; padding: 14px 18px; font-size: 20px; z-index: 999;" target="_blank">
+    💬
+  </a>
+
+  <!-- Footer -->
   <div id="footer-placeholder"></div>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    // Load nav and footer dynamically
-    fetch("components/nav.html")
-      .then(res => res.text())
-      .then(html => document.getElementById("nav-placeholder").innerHTML = html);
+    fetch("components/nav.html").then(res => res.text()).then(html => {
+      document.getElementById("nav-placeholder").innerHTML = html;
+    });
 
-    fetch("components/footer.html")
-      .then(res => res.text())
-      .then(html => document.getElementById("footer-placeholder").innerHTML = html);
+    fetch("components/footer.html").then(res => res.text()).then(html => {
+      document.getElementById("footer-placeholder").innerHTML = html;
+    });
   </script>
 </body>
 </html>
