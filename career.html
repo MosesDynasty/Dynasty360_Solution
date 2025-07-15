@@ -36,21 +36,41 @@
       <h4>Book a Career Session</h4>
       <form action="https://formsubmit.co/7bcdbb4083b7a1da786ac4057fbd1226" method="POST">
         <div class="mb-3">
-          <label for="nameCareer" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="nameCareer">
+          <label for="fullNameCareer" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullNameCareer" name="name" required>
         </div>
+
         <div class="mb-3">
           <label for="emailCareer" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emailCareer">
+          <input type="email" class="form-control" id="emailCareer" name="email" required>
         </div>
+
         <div class="mb-3">
-          <label for="goalCareer" class="form-label">Tell us your current career status</label>
-          <textarea class="form-control" id="goalCareer" rows="4"></textarea>
+          <label for="careerGoal" class="form-label">Career Goal or Industry of Interest</label>
+          <input type="text" class="form-control" id="careerGoal" name="career_interest" required>
         </div>
+
+        <div class="mb-3">
+          <label for="currentLevel" class="form-label">Current Experience Level</label>
+          <select class="form-select" id="currentLevel" name="experience_level" required>
+            <option value="">-- Select --</option>
+            <option value="Entry Level">Entry Level</option>
+            <option value="Mid Level">Mid Level</option>
+            <option value="Senior Level">Senior Level</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="notesCareer" class="form-label">Additional Notes</label>
+          <textarea class="form-control" id="notesCareer" name="notes" rows="4"></textarea>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Career Acceleration Booking">
         <input type="hidden" name="_next" value="https://dynasty360.com.ng/thank-you.html">
       </form>
+
     </div>
   </section>
 

@@ -36,21 +36,37 @@
       <h4>Request Document Service</h4>
       <form action="https://formsubmit.co/7bcdbb4083b7a1da786ac4057fbd1226" method="POST">
         <div class="mb-3">
-          <label for="nameDoc" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="nameDoc">
+          <label for="fullNameDoc" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullNameDoc" name="name" required>
         </div>
+
         <div class="mb-3">
           <label for="emailDoc" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emailDoc">
+          <input type="email" class="form-control" id="emailDoc" name="email" required>
         </div>
+
         <div class="mb-3">
-          <label for="docNeed" class="form-label">What document do you need?</label>
-          <textarea class="form-control" id="docNeed" rows="4"></textarea>
+          <label for="docType" class="form-label">Type of Document Service Needed</label>
+          <select class="form-select" id="docType" name="document_type" required>
+            <option value="">-- Select --</option>
+            <option value="CAC Registration">CAC Registration</option>
+            <option value="TIN">TIN Generation</option>
+            <option value="Business Name Certificate">Business Name Certificate</option>
+            <option value="International Passport Support">International Passport Support</option>
+          </select>
         </div>
+
+        <div class="mb-3">
+          <label for="notesDoc" class="form-label">Additional Details</label>
+          <textarea class="form-control" id="notesDoc" name="notes" rows="4"></textarea>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Document Service Booking">
         <input type="hidden" name="_next" value="https://dynasty360.com.ng/thank-you.html">
       </form>
+
     </div>
   </section>
 

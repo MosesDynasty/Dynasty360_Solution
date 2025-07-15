@@ -35,21 +35,42 @@
       <h4>Book a Session</h4>
       <form action="https://formsubmit.co/7bcdbb4083b7a1da786ac4057fbd1226" method="POST">
         <div class="mb-3">
-          <label for="nameDoc" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="nameDoc">
+          <label for="fullNameTravel" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullNameTravel" name="name" required>
         </div>
+
         <div class="mb-3">
-          <label for="emailDoc" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emailDoc">
+          <label for="emailTravel" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailTravel" name="email" required>
         </div>
+
         <div class="mb-3">
-          <label for="docNeed" class="form-label">Describe your Travel Goal</label>
-          <textarea class="form-control" id="docNeed" rows="4"></textarea>
+          <label for="destination" class="form-label">Preferred Destination Country</label>
+          <input type="text" class="form-control" id="destination" name="destination_country" required>
         </div>
+
+        <div class="mb-3">
+          <label for="purpose" class="form-label">Purpose of Travel</label>
+          <select class="form-select" id="purpose" name="purpose_of_travel" required>
+            <option value="">-- Select --</option>
+            <option value="Study">Study</option>
+            <option value="Work">Work</option>
+            <option value="Visit">Visit</option>
+            <option value="Relocate">Relocate</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="notesTravel" class="form-label">Additional Notes</label>
+          <textarea class="form-control" id="notesTravel" name="notes" rows="4"></textarea>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Travel & Relocation Booking">
         <input type="hidden" name="_next" value="https://dynasty360.com.ng/thank-you.html">
       </form>
+
 
     </div>
   </section>

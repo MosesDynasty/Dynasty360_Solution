@@ -37,18 +37,24 @@
       <form action="https://formsubmit.co/7bcdbb4083b7a1da786ac4057fbd1226" method="POST">
         <div class="mb-3">
           <label for="nameCar" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="nameCar">
+          <input type="text" class="form-control" id="nameCar" name="name" required>
         </div>
+
         <div class="mb-3">
           <label for="emailCar" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emailCar">
+          <input type="email" class="form-control" id="emailCar" name="email" required>
         </div>
+
         <div class="mb-3">
           <label for="carSpec" class="form-label">Car Make, Model & Year of Interest</label>
-          <textarea class="form-control" id="carSpec" rows="4"></textarea>
+          <textarea class="form-control" id="carSpec" name="car_details" rows="4" required></textarea>
         </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
+
+        <!-- Hidden FormSubmit settings -->
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Car Request via Dynasty360 Website">
         <input type="hidden" name="_next" value="https://dynasty360.com.ng/thank-you.html">
       </form>
     </div>
