@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://dynasty360.com.ng/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dynasty360.com.ng/travel.html</loc>
+  </url>
+  <url>
+    <loc>https://dynasty360.com.ng/career.html</loc>
+  </url>
+  <url>
+    <loc>https://dynasty360.com.ng/car.html</loc>
+  </url>
+  <url>
+    <loc>https://dynasty360.com.ng/document.html</loc>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://dynasty360.com.ng/Blogs/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dynasty360.com.ng/Blogs/visa-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://dynasty360.com.ng/Blogs/car-import.html</loc>
+  </url>
+  <url>
+    <loc>https://dynasty360.com.ng/Blogs/career-paths.html</loc>
+  </url>
+
+</urlset>
